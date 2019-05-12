@@ -27,3 +27,41 @@ function afterConnection() {
     connection.end();
   });
 }
+
+
+
+function afterConnection() {
+  connection.query("SELECT product_name FROM products", function(err, res) {
+    if (err) throw err;
+    console.log(res);
+    connection.end();
+  });
+}
+function afterConnection() {
+  connection.query("SELECT department_name FROM products", function(err, res) {
+    if (err) throw err;
+    console.log(res);
+    connection.end();
+  });
+}
+function afterConnection() {
+  connection.query("SELECT price FROM products", function(err, res) {
+    if (err) throw err;
+    console.log(res);
+    connection.end();
+  });
+}
+function afterConnection() {
+  connection.query("SELECT stock_quantity FROM products", function(err, res) {
+    if (err) throw err;
+    console.log(res);
+    connection.end();
+  });
+}
+function afterConnection() {
+  connection.query("SELECT * FROM products", function(err, res) {
+    if (err) throw err;
+    console.log(res);
+    connection.end();
+  });
+}
